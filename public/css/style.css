@@ -4,6 +4,18 @@ body {
   background-color: orange;
 }
 
-p, h1{
+p, h1 {
   color: #fff;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+img {
+  width: 180px;
 }
