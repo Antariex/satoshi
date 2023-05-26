@@ -1,21 +1,153 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Estilos universales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Estilos para elementos del header: logo, barra superior, barra de navegación */
+header {
+  display: flex;
   background-color: orange;
 }
 
-p, h1 {
-  color: #fff;
-  text-align: center;
+/*Logo*/
+.logo img {
+  max-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
+/*Barra superior: register, login, search, favs, cart*/
+.navbarSuperior {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  font-size: 12px;
+  width: 100wh;
+  flex-wrap: nowrap;
 }
 
-img {
-  width: 180px;
+.navbarSuperior a {
+  text-decoration: none;
+  color: gray;
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbarSuperior a:hover {
+  color: #000;
+}
+
+.fav:hover {
+  color: red !important;
+}
+
+
+/*Barra de navegacion*/
+.navbarInferior {
+  background-color: orange !important;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+}
+
+.navbarInferior a {
+  text-decoration: none;
+  color: #fff;
+  padding: 4px 6px !important;
+  font-size: 16px !important;
+  position: relative;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  transition: width 0.5s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+
+/*Menues desplegables*/
+.nav-item a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  background-color: #fff;
+  display: none;
+  z-index: 1;
+  list-style: none;
+  border: 1px solid orange;
+}
+
+.nav-item:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submenu li:first-child a {
+  border-top: none;
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+  border-top: none;
+}
+
+.submenu li a {
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  border-top: 1px solid orange;
+  width: 200px;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.submenu li a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+
+
+/*Estilos del body*/
+p, h1 {
+  color: #000;
+  text-align: center;
 }

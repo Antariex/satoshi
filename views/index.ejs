@@ -2,13 +2,17 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/css/style.css' />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
   <body>
-    <div class="logo"><img src='/images/logo2.jpeg' alt="logo"></div>
+
+    <!-- Aquí comienza el header: logo, navbars y campo de búsqueda -->
+    <%- include('partials/header.ejs') %>
+    
+    <br>
     <h1><%= title %></h1>
     <br>
     <p>[ SITIO EN CONSTRUCCIÓN ]</p>
-    
   </body>
 </html>

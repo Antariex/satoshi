@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos: idiomas, adaptabilidad, estilos, tipografías, iconos y título -->
+    <link href="/css/styles.css" rel="stylesheet">
+    <%- include ('../partials/head') %>
+</head>
+
+<footer>
+    <div class="enlaces">
+        <section class="nosotros">
+            <p>Nosotros</p>
+            <ul>
+                <li><a href="/aboutUs">Quiénes somos</a></li>
+                <li><a href="/sucursales">Sucursales</a></li>
+                <li><a href="/products">Catálogo</a></li>
+            </ul>
+        </section>
+
+        <section class="ayuda">
+            <p>Ayuda</p>
+            <ul>
+                <li><a href="mailto:contacto@animalia.com">Contacto</a></li>
+                <li><a href="#">Medios de pago</a></li>
+                <li><a href="#">Envios</a></li>
+            </ul>
+        </section>
+
+        <section class="cuenta">
+            <p>Cuenta</p>
+            <ul>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="#">Seguimiento</a></li>
+                <li><a href="/products/productCreate">Administración</a></li>
+            </ul>
+        </section>
+
+        <section class="redes">
+            <p>¡Seguínos!</p>
+            <ul>
+                <li><a href="https://twitter.com/search?q=Animalia&src=typed_query" target=”_blank”><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </section>
+    </div>
+    
+    <div class="up">
+        <button onclick="window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });">
+            <i class="fa-solid fa-caret-up"></i>
+            </i></button>
+    </div>
+
+    <div class="legales">
+        <p>&nbsp © Pet Shop Animalia - Lo mejor para tus mascotas.<a href="#">Términos y condiciones</a></p>
+    </div>
+
+</footer>
